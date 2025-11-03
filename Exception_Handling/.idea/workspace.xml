@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4493da0-0322-4ce8-bb5e-33868ab5f80a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/ATM_Project/src/atmProject/ATM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract_Classes/src/abstractclasses/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract_Classes/src/abstractclasses/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Abstract_Classes/src/abstractclasses/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access_Modifiers/src/accessmodifier/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Access_Modifiers/src/accessmodifier/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calculator_Project/src/calculatorProject/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes_and_Object/src/classandobject/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes_and_Object/src/classandobject/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Encapsulation/src/encapsulation/BankAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Encapsulation/src/encapsulation/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exception_Handling/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance_&amp;_Protected_Access/src/inheritance/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance_&amp;_Protected_Access/src/inheritance/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inheritance_&amp;_Protected_Access/src/inheritance/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/src/interfaces/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/src/interfaces/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface/src/interfaces/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multiple_Inheritance_using_Interface/src/abc/Duck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multiple_Inheritance_using_Interface/src/abc/Flyable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multiple_Inheritance_using_Interface/src/abc/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multiple_Inheritance_using_Interface/src/abc/Swimmable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A1]/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A1]/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A1]/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A1]/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A2]/4_ways_to_create_obj.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A2]/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A3]/Arraylist Vs Vector Table.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A3]/SimpleCapacityProof.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A4]/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A4]/one.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A4]/three.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/[ICT20-A4]/two.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="34yWyznr8K2YGbjnUDGNSXqIsvn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/muslima/OneDrive/Desktop/SEPM(ICT-3107)/validation_module",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4493da0-0322-4ce8-bb5e-33868ab5f80a" name="Changes" comment="" />
+      <created>1762186552758</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762186552758</updated>
+    </task>
+    <servers />
+  </component>
+</project>
