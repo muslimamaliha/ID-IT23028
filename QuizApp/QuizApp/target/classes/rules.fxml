@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="15" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.RulesController">
+    <Text text="Quiz Rules" style="-fx-font-size: 20;"/>
+    <Text>
+        1. Total 10 questions
+        2. 15 seconds per question
+        3. 1 point per correct answer
+        4. Navigate using Next/Back
+        5. Submit on question 10
+    </Text>
+
+    <Button text="Back" onAction="#handleBack"/>
+</VBox>
