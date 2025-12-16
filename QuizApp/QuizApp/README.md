@@ -55,6 +55,7 @@ private static final String PASSWORD = "your_mysql_password";
 ```
 
 ## Project Structure
+![Project Structure](https://github.com/muslimamaliha/ID-IT23028/blob/main/images/project_structure.png)
 
 ## Application Workflow
 Welcome Screen → Start application
@@ -71,9 +72,13 @@ Leaderboard → See rankings
 
 ## Preview
 ### Welcome Screen
+![Welcome Screen](https://github.com/muslimamaliha/ID-IT23028/blob/main/images/welcome_screen.png)
 ### Login Screen
+![Login Screen](https://github.com/muslimamaliha/ID-IT23028/blob/main/images/login_screen.png)
 ### Quiz Screen
+![Quiz Screen](https://github.com/muslimamaliha/ID-IT23028/blob/main/images/quiz_screen.jpg)
 ### Leaderboard Screen
+![Leaderboard Screen](https://github.com/muslimamaliha/ID-IT23028/blob/main/images/leaderboard_screen.png)
 
 ## Future Enhancements
 1. Add multiple quiz categories (Python, C++, Database)
