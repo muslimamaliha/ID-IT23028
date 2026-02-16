@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student List</title>
+</head>
+<body>
+<h2>Student List</h2>
+<p>Current Date & Time: <span th:text="${currentDateTime}"></span></p>
+
+<!-- Insert Form -->
+<form th:action="@{/students}" method="post">
+    <label>Name:</label>
+    <input type="text" th:field="*{studentName}" name="studentName" required />
+    <label>CGPA:</label>
+    <input type="number" step="0.01" th:field="*{cgpa}" name="cgpa" required />
+    <button type="submit">Add Student</button>
+</form>
+
+<br>
+
+<!-- Student Table -->
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>CGPA</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="student : ${students}">
+        <td th:text="${student.studentId}"></td>
+        <td th:text="${student.studentName}"></td>
+        <td th:text="${student.cgpa}"></td>
+        <td>
+            <a th:href="@{'/students/edit/' + ${student.studentId}}">Update</a>
+            <form th:action="@{'/students/' + ${student.studentId}}" method="post" style="display:inline;">
+                <input type="hidden" name="_method" value="delete"/>
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
