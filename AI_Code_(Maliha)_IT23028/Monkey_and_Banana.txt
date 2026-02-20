@@ -1,0 +1,35 @@
+import deque
+
+def BFS(start, x, y):
+    queue = deque()
+    visited = set()
+
+    queue.append(P8Board(start, x, y, 0))
+    visited.add(tuple(map(tuple, start)))
+
+    while queue:
+        current = queue.popleft()
+
+        if is_goal(current.board):
+            print("BFS Solution depth:", current.depth)
+            for r in current.board:
+                print(r)
+            return
+
+        for i in range(4):
+            nx = current.x + row[i]
+            ny = current.y + col[i]
+
+            if is_valid(nx, ny):
+                new_board = [r[:] for r in current.board]
+
+                new_board[current.x][current.y], new_board[nx][ny] = \
+                    new_board[nx][ny], new_board[current.x][current.y]
+
+                state = tuple(map(tuple, new_board))
+
+                if state not in visited:
+                    visited.add(state)
+                    queue.append(P8Board(new_board, nx, ny, current.depth + 1))
+
+    print("No BFS solution found")

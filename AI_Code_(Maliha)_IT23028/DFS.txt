@@ -1,0 +1,95 @@
+import heapq
+
+N = 3
+
+# Goal state
+GOAL = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 0]
+]
+
+# Possible moves: left, right, up, down
+row = [0, 0, -1, 1]
+col = [-1, 1, 0, 0]
+
+
+class Node:
+    def __init__(self, board, x, y, g, h):
+        self.board = board
+        self.x = x
+        self.y = y
+        self.g = g      # path cost
+        self.h = h      # heuristic cost
+        self.f = g + h  # total cost
+
+    def __lt__(self, other):
+        return self.f < other.f
+
+
+def is_goal(board):
+    return board == GOAL
+
+
+def is_valid(x, y):
+    return 0 <= x < N and 0 <= y < N
+
+
+def manhattan(board):
+    distance = 0
+    for i in range(N):
+        for j in range(N):
+            val = board[i][j]
+            if val != 0:
+                goal_x = (val - 1) // N
+                goal_y = (val - 1) % N
+                distance += abs(i - goal_x) + abs(j - goal_y)
+    return distance
+
+
+def AO_star(start, x, y):
+    pq = []
+    visited = set()
+
+    h = manhattan(start)
+    heapq.heappush(pq, Node(start, x, y, 0, h))
+    visited.add(tuple(map(tuple, start)))
+
+    while pq:
+        current = heapq.heappop(pq)
+
+        if is_goal(current.board):
+            print("Goal reached!")
+            print("Solution depth:", current.g)
+            print("Final board:")
+            for r in current.board:
+                print(r)
+            return
+
+        for i in range(4):
+            new_x = current.x + row[i]
+            new_y = current.y + col[i]
+
+            if is_valid(new_x, new_y):
+                new_board = [r[:] for r in current.board]
+                new_board[current.x][current.y], new_board[new_x][new_y] = \
+                    new_board[new_x][new_y], new_board[current.x][current.y]
+
+                board_tuple = tuple(map(tuple, new_board))
+                if board_tuple not in visited:
+                    visited.add(board_tuple)
+                    h = manhattan(new_board)
+                    heapq.heappush(
+                        pq,
+                        Node(new_board, new_x, new_y, current.g + 1, h)
+                    )
+
+    print("No solution found")
+
+start_board = [
+    [1, 2, 3],
+    [4, 0, 5],
+    [6, 7, 8]
+]
+x, y = 1, 1   # position of blank tile
+AO_star(start_board, x, y)
